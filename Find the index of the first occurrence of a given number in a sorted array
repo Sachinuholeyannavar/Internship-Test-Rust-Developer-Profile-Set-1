@@ -1,0 +1,9 @@
+fn first_occurrence(arr: &[i32], target: i32) -> Option<usize> {
+    arr.iter().position(|&x| x == target)
+}
+
+fn main() {
+    let sorted_array = [1, 2, 3, 4, 5];
+    let target = 3;
+    println!("Index of {}: {:?}", target, first_occurrence(&sorted_array, target));
+}

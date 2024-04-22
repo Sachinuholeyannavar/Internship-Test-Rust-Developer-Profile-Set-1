@@ -1,0 +1,8 @@
+fn shortest_word(words: &str) -> Option<&str> {
+    words.split_whitespace().min_by_key(|w| w.len())
+}
+
+fn main() {
+    let test_string = "This is a test string";
+    println!("Shortest word: {:?}", shortest_word(test_string));
+}
